@@ -6,10 +6,10 @@ class ReviewFeedback extends Component{
         return (
             <div>
               <h2>Review Your Feedback</h2>  
-               <p>Feelings:0</p>
-               <p>Understanding:0</p>
-               <p>Support:0</p>
-               <p>Comments:</p>
+               <p>Feelings:{this.props.reduxState.feelingReducer}</p>
+               <p>Understanding:{this.props.reduxState.understandingReducer}</p>
+               <p>Support:{this.props.reduxState.supportReducer}</p>
+               <p>Comments:{this.props.reduxState.commentsReducer}</p>
                <button>INCOMPLETE</button>
             
             </div>
@@ -18,4 +18,10 @@ class ReviewFeedback extends Component{
     }
 }
 
-export default connect()(ReviewFeedback);
+const mapStateToProps = (reduxState) => {
+    return {
+        reduxState
+    }
+}
+
+export default connect(mapStateToProps)(ReviewFeedback);
