@@ -29,11 +29,7 @@ class Understanding extends Component{
  
 }
 
-const mapStateToProps = (reduxState) => {
-    return {
-        reduxState
-    }
-}
 
 
-export default connect(mapStateToProps)(Understanding);
+
+export default connect()(Understanding);

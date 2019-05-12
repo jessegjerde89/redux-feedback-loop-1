@@ -29,11 +29,7 @@ class Feeling extends Component{
     }
  
 }
-const mapStateToProps = (reduxState) => {
-    return { 
-        reduxState
-    };
-}
 
 
-export default connect(mapStateToProps)(Feeling);
+
+export default connect()(Feeling);
