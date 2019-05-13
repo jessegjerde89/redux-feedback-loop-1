@@ -1,5 +1,5 @@
 # Redux Feedback Loop
-This application displays feedback that will be collected over 4 views, and when all steps are complete, app will save the feedback in the database. In a separate part of the page, display the current feedback values and a submit button. 
+This application displays feedback that will be collected over 4 views, and when all steps are complete, app will save the feedback in the database. In a separate part of the page, displays the current feedback values and a submit button. 
 
 ##Built With
 node js React npm JSX React-Redux materialUI
