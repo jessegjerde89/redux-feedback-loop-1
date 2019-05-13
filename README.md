@@ -53,13 +53,14 @@ Heena Kouser
 ```
  ### Notes:
 
+I believe that base mode is complete so way to go Heena ! I liked the site, looked sleak, seams to be fully functional.
+
 Seams that the old review data is still in the displayed when starting a new review. May want to reset the values
 when the review is sent to the database. 
 
-I believe that base mode is complete so way to go Heena ! I liked the site, looked sleak, seams to be fully functional.
-
 You hit all the requirements and deploying the site to Heroku was a stretch goal, so kudos ! 
  
+Your Readme should tell me to set up a database as well.
 
 ---
 Site functional | Yes
@@ -76,7 +77,7 @@ Update button is disabled until all fields filled | Yes
 | --- | :---: |
 | More than 15 git commits | No - seeing 12 |
 | Commits are descriptive of the changes made or feature added | Partial - Be a bit more descriptive when making commits  |
-| Readme file updated | Yes, maybe a bit a formatting needed  |
+| Readme file updated | Yes, maybe a bit of formatting needed  |
 | Appropriate amount of code comments | yes |
 | Code is consistently formatted | yes |
 
