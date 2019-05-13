@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
+// Redux
 import {createStore, combineReducers, applyMiddleware,} from 'redux'
 import {Provider} from 'react-redux'
 import logger from 'redux-logger'
@@ -16,7 +17,7 @@ import logger from 'redux-logger'
   }
 
 
-
+//this reducer return an object of feedback
 const feedbackReducer = (state = feedback, action) => {
     if (action.type === "SET_FEEDBACK") {
 
@@ -27,7 +28,7 @@ const feedbackReducer = (state = feedback, action) => {
     }
     return state;
 };
-
+// The store is the big JavaScript Object that holds all of the information for our application
 const storeInstance = createStore (
     combineReducers({
         feedbackReducer,

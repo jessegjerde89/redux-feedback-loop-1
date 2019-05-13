@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool');
 
+// POST a new feedback
 router.post('/', (req, res) => {
     console.log(req.body);
   

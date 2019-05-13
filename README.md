@@ -32,6 +32,14 @@ npm run client
 
 Between the server and client, you'll need two terminal tabs! Because we're using nodemon, both our client side and server side will automatically spin back up when changes are made!
 
+##Instructions
+when page loads enter the feeling input(1-5)
+hit NEXT button to navigate to understanding page
+enter field(1-5) for understanding 
+and do the same with support and comments and hit NEXT button that will take you to the review page
+if all the fields are provided hit submit and it navigates thank you page with the feedback provided
+new feedback button takes you to the home page
+
 ##Authors
 Heena Kouser
 

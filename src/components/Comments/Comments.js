@@ -4,11 +4,14 @@ import Header from '../Header/Header'
 
 
 class Comments extends Component{
+    // Called when the input field changes
     handleChange = (event) => {
+        //dispatching an action
         this.props.dispatch({type: 'SET_FEEDBACK', payload: event.target.value, name:event.target.name})
     }
- 
+    // Called when the submit button is pressed
     handleClick = () => {
+        //navigates to the taco page (which just displays the review feedback component)
         this.props.history.push('/taco');
     }
  
