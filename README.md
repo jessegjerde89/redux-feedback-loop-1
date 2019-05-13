@@ -47,3 +47,39 @@ heroku--https://fierce-badlands-99810.herokuapp.com/#/
 Heena Kouser
 
 
+
+
+# Heena's site
+```
+ I believe that base mode is complete 
+
+---
+Site functional | Yes
+The Database using a POST request | Yes
+Multi-step form functional | Yes
+The app displays the results each step | Yes 
+Review page with with submit button active when survey complete | Yes
+Used Redux to store your data across views | Yes 
+Update button is disabled until all fields filled | Yes
+
+
+---
+### Notes:
+
+Seams that the old review data is still in the displayed when starting a new review. May want to reset the values
+when the review is sent to the database. 
+
+
+---
+| General Items | Complete? |
+| --- | :---: |
+| More than 15 git commits | No - seeing 12 |
+| Commits are descriptive of the changes made or feature added | Partial - Be a bit more descriptive when making commits  |
+| Readme file updated | Yes, maybe a bit a formatting needed  |
+| Appropriate amount of code comments | yes |
+| Code is consistently formatted | yes |
+
+---
+### Notes:
+
+I beieve you hit all the requirements and deploying the site to Heroku was a stretch goal, so kudos ! 
