@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Header from '../Header/Header';
-import ReviewFeedback from '../ReviewFeedback/ReviewFeedback';
+
 
 
 
 class Understanding extends Component{
     handleChange = (event) => {
-        this.props.dispatch({type: 'SET_UNDERSTANDING', payload: event.target.value})
+        this.props.dispatch({type: 'SET_FEEDBACK', payload: event.target.value, name: event.target.name})
     }
  
     handleClick = () => {
@@ -20,15 +20,14 @@ class Understanding extends Component{
                 <Header />
                 <h2>How well are you understanding the content?</h2>
                 <label>understanding? (1 - 5)</label>
-                <input onChange={this.handleChange} type="number"/>
+                <input onChange={this.handleChange} type="number" name="understanding"/>
                 <button onClick={this.handleClick}>NEXT</button>
-                <ReviewFeedback />
+                
             </div>
         )
     }
  
 }
-
 
 
 

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Header from '../Header/Header';
-import ReviewFeedback from '../ReviewFeedback/ReviewFeedback';
+
 
 
 
 class Feeling extends Component{
-
     handleChange = (event) => {
-        this.props.dispatch({type: 'SET_FEELING', payload: event.target.value})
+        this.props.dispatch({type: 'SET_FEEDBACK', payload: event.target.value, name:event.target.name})
     }
  
     handleClick = () => {
@@ -21,9 +20,9 @@ class Feeling extends Component{
                 <Header />
                 <h2>How are you feeling today?</h2>
                 <label>Feeling? (1 - 5)</label>
-                <input onChange={this.handleChange} type="number"/>
+                <input onChange={this.handleChange} type="number" name="feeling"/>
                 <button onClick={this.handleClick}>NEXT</button>
-                <ReviewFeedback />
+                
             </div>
         )
     }

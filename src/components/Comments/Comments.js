@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Header from '../Header/Header'
-import ReviewFeedback from '../ReviewFeedback/ReviewFeedback';
+
 
 class Comments extends Component{
     handleChange = (event) => {
-        this.props.dispatch({type: 'SET_COMMENTS', payload: event.target.value})
+        this.props.dispatch({type: 'SET_FEEDBACK', payload: event.target.value, name:event.target.name})
     }
  
     handleClick = () => {
-        this.props.history.push('/');
+        this.props.history.push('/taco');
     }
  
     render() {
@@ -17,10 +17,10 @@ class Comments extends Component{
             <div>
                 <Header />
                 <h2>Any comments you want to leave?</h2>
-                <label>understanding? (1 - 5)</label>
-                <input onChange={this.handleChange} type="text"/>
+                <label>comments:</label>
+                <input onChange={this.handleChange} type="text" name="comments"/>
                 <button onClick={this.handleClick}>NEXT</button>
-                <ReviewFeedback />
+                
             </div>
         )
     }
