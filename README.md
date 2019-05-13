@@ -40,6 +40,9 @@ and do the same with support and comments and hit NEXT button that will take you
 if all the fields are provided hit submit and it navigates thank you page with the feedback provided
 new feedback button takes you to the home page
 
+##Deployed
+heroku--https://fierce-badlands-99810.herokuapp.com/#/
+
 ##Authors
 Heena Kouser
 
