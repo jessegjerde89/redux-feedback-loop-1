@@ -59,6 +59,8 @@ Seams that the old review data is still in the displayed when starting a new rev
 when the review is sent to the database. 
 
 You hit all the requirements and deploying the site to Heroku was a stretch goal, so kudos ! 
+
+May want a limit for the user input from 1-5, able to set the value to any number currently on the first three pages. 
  
 Your Readme should tell me to set up a database as well.
 
